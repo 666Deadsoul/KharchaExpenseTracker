@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/logs"
+        android:title="Logs"
+        android:icon="@drawable/logs"/>
+    <item
+        android:id="@+id/plus"
+        android:title="New"
+        android:icon="@drawable/plus"/>
+    <item
+        android:id="@+id/stats"
+        android:title="Analytics"
+        android:icon="@drawable/chart"/>
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+</menu>

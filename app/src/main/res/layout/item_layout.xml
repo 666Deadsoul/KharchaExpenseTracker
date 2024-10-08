@@ -1,0 +1,39 @@
+<!-- res/layout/item_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_shape"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/categoryLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Category Logo"
+        android:src="@drawable/ic_launcher_foreground" /> <!-- Replace with your logo -->
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $0.00"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/dateRecorded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Recorded: YYYY-MM-DD"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Rlogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recover Now"
+        android:textSize="30sp"
+        android:layout_marginTop= "10dp"
+        android:layout_gravity="center"
+        android:textFontWeight="700"/>
+    <TextView
+        android:id="@+id/ferror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:layout_gravity="center"
+        android:textFontWeight="700"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:id="@+id/Funame"
+        android:hint="@string/uname"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:id="@+id/Fpass"
+        android:inputType="textPassword"
+        android:hint="@string/pass"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/FCpass"
+        android:hint="Confirm Password"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Change Password"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:id="@+id/Freset"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/backtologin"
+        android:text="Go back to login"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"/>
+</LinearLayout>

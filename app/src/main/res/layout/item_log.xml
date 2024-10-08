@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_margin="15dp">
+
+    <!-- Category Logo on the Left -->
+    <ImageView
+        android:id="@+id/categoryLogo"
+        android:layout_gravity="center"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:contentDescription="Category Logo"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_launcher_foreground" /> <!-- Replace with your logo -->
+
+    <!-- Details Section on the Right -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+             />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $0.00"
+           />
+
+        <TextView
+            android:id="@+id/dateRecorded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Recorded: YYYY-MM-DD"
+             />
+    </LinearLayout>
+
+    <!-- Delete Button at the Bottom Left -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:drawableEnd="@drawable/delete"
+        android:drawableTint="@android:color/white"
+        android:layout_margin="10dp"
+        android:layout_gravity="center" />
+</LinearLayout>
+
